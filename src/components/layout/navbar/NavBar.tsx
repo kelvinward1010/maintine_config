@@ -37,7 +37,6 @@ export function NavBar() {
     return (
         <div className={styles.container}>
             <Accordion
-                defaultValue="Apples"
                 classNames={{ chevron: styles.chevron }}
                 chevron={<IconPlus className={styles.icon} />}
                 transitionDuration={1000}

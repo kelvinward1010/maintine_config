@@ -1,16 +1,21 @@
 import { IconArrowRight, IconBrandMantine, IconExternalLink, IconSearch, IconUserCircle } from '@tabler/icons-react';
 import styles from './style.module.scss';
-import { Avatar, CloseButton, Flex, Input, Menu, Text, rem } from '@mantine/core';
+import { Avatar, CloseButton, Flex, Input, Menu, Modal, Text, rem } from '@mantine/core';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDisclosure } from '@mantine/hooks';
 
 export function Header() {
 
     const [search, setSearch] = useState('');
+    const [opened, { open, close }] = useDisclosure(false);
     const navigate = useNavigate();
 
     return (
         <div className={styles.container}>
+            <Modal opened={opened} onClose={close} size="xl" title="Authentication">
+                {/* Modal content */}
+            </Modal>
             <Flex
                 mih={50}
                 gap="sm"
@@ -77,9 +82,7 @@ export function Header() {
                     <Menu.Dropdown>
                         <Menu.Item
                             leftSection={<IconUserCircle style={{ width: rem(14), height: rem(14) }} />}
-                            component="a"
-                            href="https://mantine.dev"
-                            target="_blank"
+                            onClick={open}
                         >
                             Profile
                         </Menu.Item>

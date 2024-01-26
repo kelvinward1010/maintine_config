@@ -1,0 +1,9 @@
+.mantine-Modal-header{
+    background: #1edaa1 !important;
+    color: white !important;
+}
+
+.mantine-Modal-close{
+    color: red !important;
+    font-weight: 500 !important;
+}

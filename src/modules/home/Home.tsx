@@ -9,9 +9,10 @@ export function Home() {
                     title="Google map"
                     style={{ 
                         border: 0,
-                        width: 'auto',
+                        width: '100%',
                         height: "500px",
-                        minWidth: '450px'
+                        minWidth: '450px',
+                        maxWidth: '1000px',
                     }}
                 />
             </AspectRatio>
