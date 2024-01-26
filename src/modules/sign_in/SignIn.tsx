@@ -1,7 +1,9 @@
-
+import styles from './style.module.scss';
 
 export function SignIn() {
   return (
-    <div>SignIn</div>
+    <div className={styles.container}>
+      SignIn
+    </div>
   )
 }

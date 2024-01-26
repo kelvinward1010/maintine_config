@@ -2,6 +2,8 @@ import styles from './style.module.scss';
 import { AppShell, Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Outlet } from "react-router-dom";
+import { Header } from './header/Header';
+import { NavBar } from './navbar/NavBar';
 
 
 export function Layout() {
@@ -9,7 +11,9 @@ export function Layout() {
 
     return (
         <AppShell
-            header={{ height: 60 }}
+            header={{ 
+                height: 60,
+            }}
             navbar={{
                 width: 200,
                 breakpoint: 'sm',
@@ -24,15 +28,17 @@ export function Layout() {
                         onClick={toggle}
                         hiddenFrom="sm"
                         size="sm"
-                        color='white'
+                        color='teal'
+                        w={50}
+                        ml={10}
                     />
-                    Header
+                    <Header />
                 </div>
             </AppShell.Header>
 
             <AppShell.Navbar p="md">
                 <div className={styles.navbar}>
-                    Navbar
+                    <NavBar />
                 </div>
             </AppShell.Navbar>
 

@@ -10,7 +10,8 @@ export function Home() {
                     style={{ 
                         border: 0,
                         width: 'auto',
-                        height: "600px",
+                        height: "500px",
+                        minWidth: '450px'
                     }}
                 />
             </AspectRatio>

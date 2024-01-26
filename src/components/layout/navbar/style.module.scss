@@ -1,0 +1,15 @@
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.chevron {
+    &[data-rotate] {
+      transform: rotate(45deg);
+    }
+}
+  
+.icon {
+    width: 16px;
+    height: 16px;
+}
