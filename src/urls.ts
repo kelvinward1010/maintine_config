@@ -12,3 +12,4 @@ export const imageconfigUrl = '/image_config';
 
 //main charts
 export const areachartconfigUrl = '/areachart_config';
+export const barchartconfigUrl = '/barchart_config';

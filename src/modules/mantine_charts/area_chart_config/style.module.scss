@@ -1,0 +1,37 @@
+.container{
+
+    .box_1{
+        margin-left: 20px;
+
+        .grid_1{
+            margin-top: 15px;
+    
+            .area_chart_1{
+                background: rgb(46, 46, 46);
+                color: teal;
+            }
+    
+            .code_highlight{
+                border: 1px solid teal;
+            }
+        }
+    }
+
+    .areabox{
+        margin-top: 20px;
+
+        .grid_1{
+            margin-top: 15px;
+            margin-left: 20px;
+    
+            .area_chart_1{
+                background: rgb(46, 46, 46);
+                color: teal;
+            }
+    
+            .code_highlight{
+                border: 1px solid teal;
+            }
+        }
+    }
+}

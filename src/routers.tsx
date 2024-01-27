@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Error, Layout } from "./components";
-import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, homeUrl, imageconfigUrl, navlinkconfigUrl, signinUrl, signupUrl } from "./urls";
-import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, Home, ImageConfig, NavlinkConfig, SignIn, SignUp } from "./modules";
+import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, barchartconfigUrl, homeUrl, imageconfigUrl, navlinkconfigUrl, signinUrl, signupUrl } from "./urls";
+import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, BarChartConfig, Home, ImageConfig, NavlinkConfig, SignIn, SignUp } from "./modules";
 
 
 
@@ -36,6 +36,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: areachartconfigUrl,
                 element: <AreaChartConfig />
+            },
+            {
+                path: barchartconfigUrl,
+                element: <BarChartConfig />
             }
         ]
     },

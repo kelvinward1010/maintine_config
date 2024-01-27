@@ -25,6 +25,7 @@ export function NavBar() {
                 childrenOffset={28}
             >
                 <NavLink onClick={() => navigate('/areachart_config')} label="Area Chart" />
+                <NavLink onClick={() => navigate('/barchart_config')} label="Bar Chart" />
             </NavLink>
         </div>
     )

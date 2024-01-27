@@ -12,3 +12,4 @@ export { ImageConfig } from './mantine_core/image_config/ImageConfig';
 
 //Mantine Charts
 export { AreaChartConfig } from './mantine_charts/area_chart_config/AreaChartConfig';
+export { BarChartConfig } from './mantine_charts/bar_chart_config/BarChartConfig';
