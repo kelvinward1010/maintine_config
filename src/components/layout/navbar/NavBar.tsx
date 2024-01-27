@@ -1,48 +1,31 @@
-import { Accordion } from '@mantine/core';
+import { NavLink } from '@mantine/core';
 import styles from './style.module.scss';
-import { IconPlus } from '@tabler/icons-react';
-
-const groceries = [
-    {
-        emoji: '🍎',
-        value: 'Apples',
-        description:
-            'Crisp and refreshing fruit. Apples are known for their versatility and nutritional benefits. They come in a variety of flavors and are great for snacking, baking, or adding to salads.',
-    },
-    {
-        emoji: '🍌',
-        value: 'Bananas',
-        description:
-            'Naturally sweet and potassium-rich fruit. Bananas are a popular choice for their energy-boosting properties and can be enjoyed as a quick snack, added to smoothies, or used in baking.',
-    },
-    {
-        emoji: '🥦',
-        value: 'Broccoli',
-        description:
-            'Nutrient-packed green vegetable. Broccoli is packed with vitamins, minerals, and fiber. It has a distinct flavor and can be enjoyed steamed, roasted, or added to stir-fries.',
-    },
-];
+import { IconChartInfographic, IconHome } from '@tabler/icons-react';
+import { useNavigate } from 'react-router-dom';
 
 export function NavBar() {
-
-    const items = groceries.map((item) => (
-        <Accordion.Item key={item.value} value={item.value}>
-            <Accordion.Control icon={item.emoji}>
-                {item.value}
-            </Accordion.Control>
-            <Accordion.Panel>{item.description}</Accordion.Panel>
-        </Accordion.Item>
-    ));
-
+    const navigate = useNavigate();
     return (
         <div className={styles.container}>
-            <Accordion
-                classNames={{ chevron: styles.chevron }}
-                chevron={<IconPlus className={styles.icon} />}
-                transitionDuration={1000}
+            <NavLink
+                href="#"
+                label="Mantine Core"
+                leftSection={<IconHome size="1rem" stroke={1.5} />}
+                childrenOffset={28}
             >
-                {items}
-            </Accordion>
+                <NavLink onClick={() => navigate('/accordion_config')} label="Accordion" />
+                <NavLink onClick={() => navigate('/navlink_config')} label="Navlink" />
+                <NavLink onClick={() => navigate('/background_image_config')} label="Background Image" />
+                <NavLink onClick={() => navigate('/image_config')} label="Image" />
+            </NavLink>
+            <NavLink
+                href="#"
+                label="Mantine Charts"
+                leftSection={<IconChartInfographic size="1rem" stroke={1.5} />}
+                childrenOffset={28}
+            >
+                <NavLink onClick={() => navigate('/areachart_config')} label="Area Chart" />
+            </NavLink>
         </div>
     )
 }
