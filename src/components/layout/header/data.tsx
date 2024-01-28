@@ -25,5 +25,29 @@ export const actions = [
         description: 'Image Config',
         url: '/image_config',
     },
+    {
+        id: 'bar_chart',
+        title: 'Bar Chart',
+        description: 'Bar Chart Config',
+        url: '/barchart_config',
+    },
+    {
+        id: 'area_chart',
+        title: 'Area Chart',
+        description: 'Area Chart Config',
+        url: '/areachart_config',
+    },
+    {
+        id: 'line_chart',
+        title: 'Line Chart',
+        description: 'Line Chart Config',
+        url: '/linechart_config',
+    },
+    {
+        id: 'donut_chart',
+        title: 'Donut Chart',
+        description: 'Donut Chart Config',
+        url: '/donutchart_config',
+    },
 ];
 

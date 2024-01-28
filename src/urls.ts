@@ -13,3 +13,6 @@ export const imageconfigUrl = '/image_config';
 //main charts
 export const areachartconfigUrl = '/areachart_config';
 export const barchartconfigUrl = '/barchart_config';
+export const linechartconfigUrl = '/linechart_config';
+export const donutchartconfigUrl = '/donutchart_config';
+export const piechartconfigUrl = '/piechart_config';

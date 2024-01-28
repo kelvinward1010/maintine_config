@@ -66,19 +66,6 @@ export function Header() {
                 </Flex>
                 <Flex
                     mih={50}
-                    gap="md"
-                    justify="flex-start"
-                    align="center"
-                    direction="row"
-                    wrap="wrap"
-                    className={styles.nav_main}
-                >
-                    <Text c={'teal.4'} className={styles.namenav}>Home</Text>
-                    <Text c={'teal.4'} className={styles.namenav}>Skills</Text>
-                    <Text c={'teal.4'} className={styles.namenav}>Languages</Text>
-                </Flex>
-                <Flex
-                    mih={50}
                     gap="sm"
                     justify="flex-start"
                     align="center"

@@ -15,7 +15,7 @@ export function Layout() {
                 height: 60,
             }}
             navbar={{
-                width: 210,
+                width: 250,
                 breakpoint: 'sm',
                 collapsed: { mobile: !opened },
             }}

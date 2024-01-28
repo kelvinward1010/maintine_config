@@ -13,3 +13,6 @@ export { ImageConfig } from './mantine_core/image_config/ImageConfig';
 //Mantine Charts
 export { AreaChartConfig } from './mantine_charts/area_chart_config/AreaChartConfig';
 export { BarChartConfig } from './mantine_charts/bar_chart_config/BarChartConfig';
+export { LineChartConfig } from './mantine_charts/line_chart_config/LineChartConfig';
+export { DonutChartConfig } from './mantine_charts/donut_chart_config/DonutChartConfig';
+export { PieChartConfig } from './mantine_charts/pie_chart_config/PieChartConfig';

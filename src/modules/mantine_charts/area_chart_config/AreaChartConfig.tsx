@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import { AreaChart } from '@mantine/charts';
-import { data, data_2 } from '../data';
+import { data, data_2 } from './data';
 import { Grid, Select, Title } from '@mantine/core';
 import { CodeHighlightTabs } from '@mantine/code-highlight';
 import { TypeScriptIcon } from '@mantinex/dev-icons';
@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export function AreaChartConfig() {
     const [curveType, setCurveType] = useState<any>('linear');
-    const [tickLine, setTickLine] = useState<any>('x');
+    const [tickLine, setTickLine] = useState<any>('y');
     const [gridAxis, setGridAxis] = useState<any>('x');
     const [legend, setLegend] = useState<any>('top');
 

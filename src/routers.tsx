@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Error, Layout } from "./components";
-import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, barchartconfigUrl, homeUrl, imageconfigUrl, navlinkconfigUrl, signinUrl, signupUrl } from "./urls";
-import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, BarChartConfig, Home, ImageConfig, NavlinkConfig, SignIn, SignUp } from "./modules";
+import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, barchartconfigUrl, donutchartconfigUrl, homeUrl, imageconfigUrl, linechartconfigUrl, navlinkconfigUrl, piechartconfigUrl, signinUrl, signupUrl } from "./urls";
+import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, BarChartConfig, DonutChartConfig, Home, ImageConfig, LineChartConfig, NavlinkConfig, PieChartConfig, SignIn, SignUp } from "./modules";
 
 
 
@@ -40,7 +40,19 @@ export const routerConfig = createBrowserRouter([
             {
                 path: barchartconfigUrl,
                 element: <BarChartConfig />
-            }
+            },
+            {
+                path: linechartconfigUrl,
+                element: <LineChartConfig />
+            },
+            {
+                path: donutchartconfigUrl,
+                element: <DonutChartConfig />
+            },
+            {
+                path: piechartconfigUrl,
+                element: <PieChartConfig />
+            },
         ]
     },
     {
