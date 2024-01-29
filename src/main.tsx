@@ -12,7 +12,7 @@ import { MantineProvider } from '@mantine/core';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MantineProvider>
+    <MantineProvider defaultColorScheme="dark">
       <RouterProvider router={routerConfig} />
     </MantineProvider>
   </React.StrictMode>,

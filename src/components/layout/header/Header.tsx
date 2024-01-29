@@ -1,6 +1,6 @@
-import { IconArrowRight, IconBrandMantine, IconExternalLink, IconSearch, IconUserCircle } from '@tabler/icons-react';
+import { IconArrowRight, IconBrandMantine, IconExternalLink, IconMoon, IconSearch, IconSun, IconUserCircle } from '@tabler/icons-react';
 import styles from './style.module.scss';
-import { Avatar, CloseButton, Flex, Group, Input, Menu, Text, rem } from '@mantine/core';
+import { ActionIcon, Avatar, CloseButton, Flex, Group, Input, Menu, Text, rem, useMantineColorScheme } from '@mantine/core';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDisclosure } from '@mantine/hooks';
@@ -13,6 +13,7 @@ export function Header() {
     const navigate = useNavigate();
     const [search, setSearch] = useState('');
     const [opened, { open, close }] = useDisclosure(false);
+    const { colorScheme, setColorScheme } = useMantineColorScheme();
 
     const items = actions
         .filter((item) => item.title.toLowerCase().includes(search.toLowerCase().trim()))
@@ -36,6 +37,10 @@ export function Header() {
                 </Group>
             </Spotlight.Action>
         ));
+
+    const toggleColorScheme = () => {
+        setColorScheme(colorScheme === 'dark' ? 'light' : 'dark');
+    };
 
     return (
         <>
@@ -88,6 +93,16 @@ export function Header() {
                             cursor: 'pointer',
                         }}
                     />
+                    <ActionIcon
+                        variant="default" 
+                        size={35}
+                        onClick={toggleColorScheme}
+                    >
+                        {colorScheme == 'dark' 
+                            ? <IconSun /> 
+                            : <IconMoon/>
+                        }
+                    </ActionIcon >
                     <Menu shadow="md">
                         <Menu.Target>
                             <Avatar
