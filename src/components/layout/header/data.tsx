@@ -49,5 +49,23 @@ export const actions = [
         description: 'Donut Chart Config',
         url: '/donutchart_config',
     },
+    {
+        id: 'pie_chart',
+        title: 'Pie Chart',
+        description: 'Pie Chart Config',
+        url: '/piechart_config',
+    },
+    {
+        id: 'codehighlight',
+        title: 'Code Highlight',
+        description: 'Code Highlight Config',
+        url: '/codehighlight_config',
+    },
+    {
+        id: 'notifications system',
+        title: 'Notifications System',
+        description: 'Notifications System Config',
+        url: '/notificationssystem_config',
+    },
 ];
 

@@ -53,8 +53,8 @@ export function PieChartConfig() {
             <div>
                 <Title order={5} c={'teal.5'}>1. Pie chart normal</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>1. Size</Text>
                             <Slider
                                 value={size} 
@@ -65,7 +65,7 @@ export function PieChartConfig() {
                                 max={500}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="2. Segments labels"
                                 value={segmentLabel}
@@ -75,8 +75,8 @@ export function PieChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>3. Padding Angle</Text>
                             <Slider
                                 value={paddingAngle} 
@@ -87,7 +87,7 @@ export function PieChartConfig() {
                                 max={50}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="4. Tooltip Data Source"
                                 value={tooltipDataSource}
@@ -97,7 +97,7 @@ export function PieChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align={'center'}>
+                    <Grid justify={'space-between'} align={'center'} grow>
                         <Grid.Col span={5}>
                             <Text fw={500} size={'sm'}>5. Stroke Width</Text>
                             <Slider
@@ -110,8 +110,8 @@ export function PieChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid className={styles.grid}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid} grow>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs
                                 withExpandButton
@@ -135,7 +135,7 @@ export function PieChartConfig() {
                                 ]}
                             />
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <PieChart
                                 withLabelsLine 
@@ -155,8 +155,8 @@ export function PieChartConfig() {
             <div className={styles.pie_other}>
                 <Title order={5} c={'teal.5'}>2. Pie start and end angle</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>1. Start Angle</Text>
                             <Slider
                                 value={startAngle} 
@@ -167,7 +167,7 @@ export function PieChartConfig() {
                                 max={360}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>2. End Angle</Text>
                             <Slider
                                 value={endAngle} 
@@ -179,8 +179,8 @@ export function PieChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid className={styles.grid}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid} grow>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs
                                 withExpandButton
@@ -204,7 +204,7 @@ export function PieChartConfig() {
                                 ]}
                             />
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <PieChart
                                 withLabelsLine 

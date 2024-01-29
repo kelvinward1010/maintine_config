@@ -54,8 +54,8 @@ export function DonutChartConfig() {
             <div>
                 <Title order={5} c={'teal.5'}>1. Donut chart normal</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>1. Size</Text>
                             <Slider
                                 value={size} 
@@ -66,7 +66,7 @@ export function DonutChartConfig() {
                                 max={500}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>2. Thickness</Text>
                             <Slider
                                 value={thickness} 
@@ -78,8 +78,8 @@ export function DonutChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>3. Padding Angle</Text>
                             <Slider
                                 value={paddingAngle} 
@@ -90,7 +90,7 @@ export function DonutChartConfig() {
                                 max={50}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="4. Tooltip Data Source"
                                 value={tooltipDataSource}
@@ -100,8 +100,8 @@ export function DonutChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>5. Chart Label</Text>
                             <Input
                                 type={'text'}
@@ -110,7 +110,7 @@ export function DonutChartConfig() {
                                 onChange={(e) => setChartLabel(e.target.value)}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>6. Stroke Width</Text>
                             <Slider
                                 value={strokeWidth} 
@@ -122,8 +122,8 @@ export function DonutChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid className={styles.grid}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid} grow>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs
                                 withExpandButton
@@ -147,7 +147,7 @@ export function DonutChartConfig() {
                                 ]}
                             />
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <DonutChart
                                 withLabelsLine 
@@ -168,8 +168,8 @@ export function DonutChartConfig() {
             <div className={styles.donut_other}>
                 <Title order={5} c={'teal.5'}>2. Donut start and end angle</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>1. Start Angle</Text>
                             <Slider
                                 value={startAngle} 
@@ -180,7 +180,7 @@ export function DonutChartConfig() {
                                 max={360}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>2. End Angle</Text>
                             <Slider
                                 value={endAngle} 
@@ -192,8 +192,8 @@ export function DonutChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid className={styles.grid}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid} grow>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs
                                 withExpandButton
@@ -217,7 +217,7 @@ export function DonutChartConfig() {
                                 ]}
                             />
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <DonutChart
                                 withLabelsLine 

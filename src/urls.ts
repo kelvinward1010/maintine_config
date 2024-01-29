@@ -16,3 +16,8 @@ export const barchartconfigUrl = '/barchart_config';
 export const linechartconfigUrl = '/linechart_config';
 export const donutchartconfigUrl = '/donutchart_config';
 export const piechartconfigUrl = '/piechart_config';
+
+
+//mantine extensions
+export const codehighlightconfigUrl = '/codehighlight_config';
+export const notificationssystemconfigUrl = '/notificationssystem_config';

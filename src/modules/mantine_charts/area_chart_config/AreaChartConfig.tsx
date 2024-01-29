@@ -113,8 +113,8 @@ export function AreaChartConfig() {
             <div>
                 <Title order={5} c={'teal.5'}>1. Area chart normal</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align='center'>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align='center' grow>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="1. Select Curve Type"
                                 value={curveType}
@@ -123,7 +123,7 @@ export function AreaChartConfig() {
                                 data={['linear', 'bump', 'natural', 'monotone', 'step', 'stepBefore', 'stepAfter']}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="2. Select Tick Line"
                                 value={tickLine}
@@ -133,8 +133,8 @@ export function AreaChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align='center'>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align='center' grow>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="3. Select Grid axis"
                                 value={gridAxis}
@@ -143,7 +143,7 @@ export function AreaChartConfig() {
                                 data={['x', 'y', 'xy', 'none']}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="4. Select Legend"
                                 value={legend}
@@ -153,8 +153,8 @@ export function AreaChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid className={styles.grid_1}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid_1} grow>
+                        <Grid.Col span={6} miw={300}>
                             <div>
                                 <Title order={6} c={'teal.5'}>Code</Title>
                                 <CodeHighlightTabs 
@@ -180,7 +180,7 @@ export function AreaChartConfig() {
                                 />
                             </div>
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <AreaChart
                                 h={300}
@@ -205,8 +205,8 @@ export function AreaChartConfig() {
             </div>
             <div className={styles.areabox}>
                 <Title order={5} c={'teal.5'}>2. Split area chart</Title>
-                <Grid className={styles.grid_1}>
-                    <Grid.Col span={6}>
+                <Grid className={styles.grid_1} grow>
+                    <Grid.Col span={6} miw={300}>
                         <div>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs 
@@ -232,7 +232,7 @@ export function AreaChartConfig() {
                             />
                         </div>
                     </Grid.Col>
-                    <Grid.Col span={6}>
+                    <Grid.Col span={6} miw={300}>
                         <Title order={6} c={'teal.5'}>Demo</Title>
                         <AreaChart
                             h={300}

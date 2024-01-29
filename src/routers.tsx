@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Error, Layout } from "./components";
-import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, barchartconfigUrl, donutchartconfigUrl, homeUrl, imageconfigUrl, linechartconfigUrl, navlinkconfigUrl, piechartconfigUrl, signinUrl, signupUrl } from "./urls";
-import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, BarChartConfig, DonutChartConfig, Home, ImageConfig, LineChartConfig, NavlinkConfig, PieChartConfig, SignIn, SignUp } from "./modules";
+import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, barchartconfigUrl, codehighlightconfigUrl, donutchartconfigUrl, homeUrl, imageconfigUrl, linechartconfigUrl, navlinkconfigUrl, notificationssystemconfigUrl, piechartconfigUrl, signinUrl, signupUrl } from "./urls";
+import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, BarChartConfig, CodeHighLightConfig, DonutChartConfig, Home, ImageConfig, LineChartConfig, NavlinkConfig, NotificationsSystemConfig, PieChartConfig, SignIn, SignUp } from "./modules";
 
 
 
@@ -52,6 +52,14 @@ export const routerConfig = createBrowserRouter([
             {
                 path: piechartconfigUrl,
                 element: <PieChartConfig />
+            },
+            {
+                path: codehighlightconfigUrl,
+                element: <CodeHighLightConfig />
+            },
+            {
+                path: notificationssystemconfigUrl,
+                element: <NotificationsSystemConfig />
             },
         ]
     },

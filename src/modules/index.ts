@@ -16,3 +16,8 @@ export { BarChartConfig } from './mantine_charts/bar_chart_config/BarChartConfig
 export { LineChartConfig } from './mantine_charts/line_chart_config/LineChartConfig';
 export { DonutChartConfig } from './mantine_charts/donut_chart_config/DonutChartConfig';
 export { PieChartConfig } from './mantine_charts/pie_chart_config/PieChartConfig';
+
+
+//Extensions
+export { CodeHighLightConfig } from './extensions/code_highlight_config/CodeHighLightConfig';
+export { NotificationsSystemConfig } from './extensions/notifications_system_config/NotificationsSystemConfig';

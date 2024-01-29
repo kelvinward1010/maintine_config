@@ -44,6 +44,8 @@ export function NavBar() {
                 label="Extensions"
                 childrenOffset={28}
             >
+                <NavLink onClick={() => navigate('/codehighlight_config')} label="CodeHighlight" />
+                <NavLink onClick={() => navigate('/notificationssystem_config')} label="Notifications system" />
             </NavLink>
         </div>
     )

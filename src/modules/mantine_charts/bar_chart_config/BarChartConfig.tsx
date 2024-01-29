@@ -81,8 +81,8 @@ export function BarChartConfig() {
             <div>
                 <Title order={5} c={'teal.5'}>1. Bar chart normal</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align={'center'}>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align={'center'} grow>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="1. Select Tick Line"
                                 value={tickLine}
@@ -91,7 +91,7 @@ export function BarChartConfig() {
                                 data={['x', 'y', 'xy', 'none']}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="2. Select Grid axis"
                                 value={gridAxis}
@@ -101,8 +101,8 @@ export function BarChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align='center'>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align='center' grow>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="3. Select Legend"
                                 value={legend}
@@ -111,7 +111,7 @@ export function BarChartConfig() {
                                 data={['top', 'bottom']}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="4. Select Type"
                                 value={type}
@@ -121,8 +121,8 @@ export function BarChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid justify={'space-between'} align='center'>
-                        <Grid.Col span={5}>
+                    <Grid justify={'space-between'} align='center' grow>
+                        <Grid.Col span={5} miw={300}>
                             <Select
                                 label="5. Select Orientation"
                                 value={orientation}
@@ -131,7 +131,7 @@ export function BarChartConfig() {
                                 data={['vertical', 'horizontal']}
                             />
                         </Grid.Col>
-                        <Grid.Col span={5}>
+                        <Grid.Col span={5} miw={300}>
                             <Text fw={500} size={'sm'}>6. Type Units</Text>
                             <Input
                                 type={'text'}
@@ -140,8 +140,8 @@ export function BarChartConfig() {
                             />
                         </Grid.Col>
                     </Grid>
-                    <Grid className={styles.grid}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid} grow>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs
                                 withExpandButton
@@ -165,7 +165,7 @@ export function BarChartConfig() {
                                 ]}
                             />
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <BarChart
                                 h={300}
@@ -192,8 +192,8 @@ export function BarChartConfig() {
             <div>
                 <Title order={5} c={'teal.5'}>2. Sync multiple BarCharts</Title>
                 <div className={styles.box_1}>
-                    <Grid className={styles.grid}>
-                        <Grid.Col span={6}>
+                    <Grid className={styles.grid} grow>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Code</Title>
                             <CodeHighlightTabs
                                 withExpandButton
@@ -217,7 +217,7 @@ export function BarChartConfig() {
                                 ]}
                             />
                         </Grid.Col>
-                        <Grid.Col span={6}>
+                        <Grid.Col span={6} miw={300}>
                             <Title order={6} c={'teal.5'}>Demo</Title>
                             <>
                                 <Text mb="md" pl="md">
