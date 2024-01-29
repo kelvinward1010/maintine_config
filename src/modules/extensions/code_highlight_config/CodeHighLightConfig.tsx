@@ -76,7 +76,7 @@ export function CodeHighLightConfig() {
                     </Grid>
                 </div>
             </div>
-            <div className={styles.box_1}>
+            <div className={styles.box_1_others}>
                 <Title order={5} c={'teal.5'}>2. Usage Code Hightlight</Title>
                 <div className={styles.box_1_center}>
                     <Grid grow>
@@ -96,8 +96,8 @@ export function CodeHighLightConfig() {
                     </Grid>
                 </div>
             </div>
-            <div className={styles.box_1}>
-                <Title order={5} c={'teal.5'}>2. Usage Code HightlightTabs</Title>
+            <div className={styles.box_1_others}>
+                <Title order={5} c={'teal.5'}>3. Usage Code HightlightTabs</Title>
                 <div className={styles.box_1_center}>
                     <Grid grow>
                         <Grid.Col>

@@ -17,7 +17,7 @@
     "@mantine/form": "^7.4.2",
     "@mantine/hooks": "^7.4.2",
     "@mantine/modals": "^7.4.2",
-    "@mantine/notifications": "^7.4.2",
+    "@mantine/notifications": "^7.5.0",
     "@mantine/spotlight": "^7.5.0",
     "@mantinex/dev-icons": "^1.0.2",
     "@tabler/icons-react": "^2.46.0",
