@@ -1,12 +1,19 @@
-import { Grid, Title } from '@mantine/core';
+import { Grid, Input, Select, Text, Title } from '@mantine/core';
 import styles from './style.module.scss';
 import { LineChart } from '@mantine/charts';
 import { data } from './data';
 import { CodeHighlightTabs } from '@mantine/code-highlight';
 import { TypeScriptIcon } from '@mantinex/dev-icons';
+import { useState } from 'react';
 
 export function LineChartConfig() {
 
+    const [curveType, setCurveType] = useState<any>('linear');
+    const [tickLine, setTickLine] = useState<any>('y');
+    const [gridAxis, setGridAxis] = useState<any>('x');
+    const [legend, setLegend] = useState<any>('top');
+    const [orientation, setOrientation] = useState<any>('horizontal');
+    const [units, setUnits] = useState<any>('');
 
     const tsIcon = <TypeScriptIcon size={18} />;
 
@@ -15,12 +22,18 @@ export function LineChartConfig() {
         h={300}
         data={data}
         dataKey="date"
+        withLegend
+        legendProps={{ verticalAlign: '${legend}', height: 50 }}
         series={[
             { name: 'Apples', color: 'indigo.6' },
             { name: 'Oranges', color: 'blue.6' },
             { name: 'Tomatoes', color: 'teal.6' },
         ]}
-        curveType="linear"
+        curveType={'${curveType}'}
+        tickLine={'${tickLine}'}
+        gridAxis={'${gridAxis}'}
+        unit={'${units}'}
+        orientation={'${orientation}'}
     />`
 
     const contentData1 =
@@ -61,12 +74,63 @@ export function LineChartConfig() {
             <div>
                 <Title order={5} c={'teal.5'}>1. Line chart normal</Title>
                 <div className={styles.box_1}>
-                    <Grid justify={'space-between'} align={'center'}>
+                <Grid justify={'space-between'} align='center'>
                         <Grid.Col span={5}>
-                            1
+                            <Select
+                                label="1. Select Curve Type"
+                                value={curveType}
+                                onChange={(e) => setCurveType(e)}
+                                placeholder="Pick value"
+                                data={['linear', 'bump', 'natural', 'monotone', 'step', 'stepBefore', 'stepAfter']}
+                            />
                         </Grid.Col>
                         <Grid.Col span={5}>
-                            2
+                            <Select
+                                label="2. Select Tick Line"
+                                value={tickLine}
+                                onChange={(e) => setTickLine(e)}
+                                placeholder="Pick value"
+                                data={['x', 'y', 'xy', 'none']}
+                            />
+                        </Grid.Col>
+                    </Grid>
+                    <Grid justify={'space-between'} align='center'>
+                        <Grid.Col span={5}>
+                            <Select
+                                label="3. Select Grid axis"
+                                value={gridAxis}
+                                onChange={(e) => setGridAxis(e)}
+                                placeholder="Pick value"
+                                data={['x', 'y', 'xy', 'none']}
+                            />
+                        </Grid.Col>
+                        <Grid.Col span={5}>
+                            <Select
+                                label="4. Select Legend"
+                                value={legend}
+                                onChange={(e) => setLegend(e)}
+                                placeholder="Pick value"
+                                data={['top', 'bottom']}
+                            />
+                        </Grid.Col>
+                    </Grid>
+                    <Grid justify={'space-between'} align='center'>
+                        <Grid.Col span={5}>
+                            <Select
+                                label="5. Select Orientation"
+                                value={orientation}
+                                onChange={(e) => setOrientation(e)}
+                                placeholder="Pick value"
+                                data={['vertical', 'horizontal']}
+                            />
+                        </Grid.Col>
+                        <Grid.Col span={5}>
+                            <Text fw={500} size={'sm'}>6. Type Units</Text>
+                            <Input
+                                type={'text'}
+                                placeholder='Type Units'
+                                onChange={(e) => setUnits(e.target.value)}
+                            />
                         </Grid.Col>
                     </Grid>
                     <Grid className={styles.grid}>
@@ -101,12 +165,18 @@ export function LineChartConfig() {
                                 data={data}
                                 dataKey="date"
                                 className={styles.line_chart}
+                                withLegend
+                                legendProps={{ verticalAlign: legend, height: 50 }}
                                 series={[
                                     { name: 'Apples', color: 'indigo.6' },
                                     { name: 'Oranges', color: 'blue.6' },
                                     { name: 'Tomatoes', color: 'teal.6' },
                                 ]}
-                                curveType="linear"
+                                curveType={curveType}
+                                tickLine={tickLine}
+                                gridAxis={gridAxis}
+                                unit={units}
+                                orientation={orientation}
                             />
                         </Grid.Col>
                     </Grid>

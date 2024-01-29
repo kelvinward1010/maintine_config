@@ -8,12 +8,17 @@
 
             .donut_chart{
                 background: rgb(46, 46, 46);
-                color: teal;
+                color: white;
+                width: 100%;
             }
     
             .code_highlight{
                 border: 1px solid teal;
             }
         }
+    }
+
+    .donut_other{
+        margin-top: 20px;
     }
 }

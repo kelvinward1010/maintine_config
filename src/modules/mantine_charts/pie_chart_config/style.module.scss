@@ -9,11 +9,16 @@
             .pie_chart{
                 background: rgb(46, 46, 46);
                 color: teal;
+                width: 100%;
             }
     
             .code_highlight{
                 border: 1px solid teal;
             }
         }
+    }
+
+    .pie_other{
+        margin-top: 20px;
     }
 }
