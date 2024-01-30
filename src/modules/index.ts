@@ -8,7 +8,8 @@ export { AccordionConfig } from './mantine_core/accordion_config/AccordionConfig
 export { NavlinkConfig } from './mantine_core/navlink_config/NavlinkConfig';
 export { BackgroundImageConfig } from './mantine_core/background_image_config/BackgroundImageConfig';
 export { ImageConfig } from './mantine_core/image_config/ImageConfig';
-
+export { BlockQuoteConfig } from './mantine_core/typography/blockquote_config/BlockQuoteConfig';
+export { HighlightConfig } from './mantine_core/typography/highlight_config/HighlightConfig';
 
 //Mantine Charts
 export { AreaChartConfig } from './mantine_charts/area_chart_config/AreaChartConfig';

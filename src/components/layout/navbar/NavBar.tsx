@@ -27,6 +27,14 @@ export function NavBar() {
                     <NavLink onClick={() => navigate('/background_image_config')} label="Background Image" />
                     <NavLink onClick={() => navigate('/image_config')} label="Image" />
                 </NavLink>
+                <NavLink
+                    href="#"
+                    label="Typography"
+                    childrenOffset={28}
+                >
+                    <NavLink onClick={() => navigate('/blockquote_config')} label="Blockquote" />
+                    <NavLink onClick={() => navigate('/highlight_config')} label="Highlight" />
+                </NavLink>
             </NavLink>
             <NavLink
                 href="#"

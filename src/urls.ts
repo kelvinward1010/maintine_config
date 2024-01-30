@@ -8,7 +8,8 @@ export const accordionconfigUrl = '/accordion_config';
 export const navlinkconfigUrl = '/navlink_config';
 export const backgroundimageconfigUrl = '/background_image_config';
 export const imageconfigUrl = '/image_config';
-
+export const blockquoteconfigUrl = '/blockquote_config';
+export const highlightconfigUrl = '/highlight_config';
 
 //main charts
 export const areachartconfigUrl = '/areachart_config';
