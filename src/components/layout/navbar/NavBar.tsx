@@ -8,6 +8,11 @@ export function NavBar() {
         <div className={styles.container}>
             <NavLink
                 href="#"
+                label="Gettings started"
+                childrenOffset={28}
+            ></NavLink>
+            <NavLink
+                href="#"
                 label="Mantine Core"
                 childrenOffset={28}
             >
