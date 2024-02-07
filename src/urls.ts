@@ -20,5 +20,6 @@ export const piechartconfigUrl = '/piechart_config';
 
 
 //mantine extensions
-export const codehighlightconfigUrl = '/codehighlight_config';
-export const notificationssystemconfigUrl = '/notificationssystem_config';
+export const codehighlightUrl = '/codehighlight';
+export const notificationssystemUrl = '/notificationssystem';
+export const richtexteditorUrl = '/richtexteditor'

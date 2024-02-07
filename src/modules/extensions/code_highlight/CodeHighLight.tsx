@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 import { CodeHighlight, CodeHighlightTabs } from '@mantine/code-highlight';
 import { NpmIcon, TypeScriptIcon, YarnIcon } from '@mantinex/dev-icons';
 
-export function CodeHighLightConfig() {
+export function CodeHighLight() {
 
     const yarnIcon = <YarnIcon size={15} />;
     const npmIcon = <NpmIcon size={15} />;

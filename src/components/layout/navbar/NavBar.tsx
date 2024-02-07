@@ -1,6 +1,11 @@
 import { NavLink } from '@mantine/core';
 import styles from './style.module.scss';
 import { useNavigate } from 'react-router-dom';
+import { 
+    codehighlightUrl,
+    notificationssystemUrl,
+    richtexteditorUrl,
+} from '../../../urls';
 
 export function NavBar() {
     const navigate = useNavigate();
@@ -57,8 +62,9 @@ export function NavBar() {
                 label="Extensions"
                 childrenOffset={28}
             >
-                <NavLink onClick={() => navigate('/codehighlight_config')} label="CodeHighlight" />
-                <NavLink onClick={() => navigate('/notificationssystem_config')} label="Notifications system" />
+                <NavLink onClick={() => navigate(codehighlightUrl)} label="CodeHighlight" />
+                <NavLink onClick={() => navigate(notificationssystemUrl)} label="Notifications system" />
+                <NavLink onClick={() => navigate(richtexteditorUrl)} label="Richtext Editor" />
             </NavLink>
         </div>
     )

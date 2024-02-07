@@ -20,5 +20,6 @@ export { PieChartConfig } from './mantine_charts/pie_chart_config/PieChartConfig
 
 
 //Extensions
-export { CodeHighLightConfig } from './extensions/code_highlight_config/CodeHighLightConfig';
-export { NotificationsSystemConfig } from './extensions/notifications_system_config/NotificationsSystemConfig';
+export { CodeHighLight } from './extensions/code_highlight/CodeHighLight';
+export { NotificationsSystem } from './extensions/notifications_system/NotificationsSystem';
+export { RichTextEditorConfig } from './extensions/richtext_editor/RichTextEditor_Config';

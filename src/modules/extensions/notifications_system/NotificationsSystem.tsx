@@ -6,7 +6,7 @@ import { Notifications } from '@mantine/notifications';
 import { notifications } from '@mantine/notifications';
 import { IconCheck } from '@tabler/icons-react';
 
-export function NotificationsSystemConfig() {
+export function NotificationsSystem() {
 
     const yarnIcon = <YarnIcon size={15} />;
     const npmIcon = <NpmIcon size={15} />;

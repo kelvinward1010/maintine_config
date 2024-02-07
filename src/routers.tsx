@@ -1,9 +1,43 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Error, Layout } from "./components";
-import { accordionconfigUrl, areachartconfigUrl, backgroundimageconfigUrl, barchartconfigUrl, blockquoteconfigUrl, codehighlightconfigUrl, donutchartconfigUrl, highlightconfigUrl, homeUrl, imageconfigUrl, linechartconfigUrl, navlinkconfigUrl, notificationssystemconfigUrl, piechartconfigUrl, signinUrl, signupUrl } from "./urls";
-import { AccordionConfig, AreaChartConfig, BackgroundImageConfig, BarChartConfig, BlockQuoteConfig, CodeHighLightConfig, DonutChartConfig, HighlightConfig, Home, ImageConfig, LineChartConfig, NavlinkConfig, NotificationsSystemConfig, PieChartConfig, SignIn, SignUp } from "./modules";
-
-
+import { 
+    accordionconfigUrl, 
+    areachartconfigUrl, 
+    backgroundimageconfigUrl, 
+    barchartconfigUrl, 
+    blockquoteconfigUrl, 
+    codehighlightUrl, 
+    donutchartconfigUrl, 
+    highlightconfigUrl, 
+    homeUrl, 
+    imageconfigUrl, 
+    linechartconfigUrl, 
+    navlinkconfigUrl, 
+    notificationssystemUrl, 
+    piechartconfigUrl,
+    richtexteditorUrl,
+    signinUrl,
+    signupUrl,
+} from "./urls";
+import { 
+    AccordionConfig, 
+    AreaChartConfig, 
+    BackgroundImageConfig, 
+    BarChartConfig, 
+    BlockQuoteConfig, 
+    CodeHighLight, 
+    DonutChartConfig, 
+    HighlightConfig, 
+    Home, 
+    ImageConfig, 
+    LineChartConfig, 
+    NavlinkConfig, 
+    NotificationsSystem, 
+    PieChartConfig, 
+    RichTextEditorConfig, 
+    SignIn, 
+    SignUp,
+} from "./modules";
 
 
 
@@ -54,12 +88,12 @@ export const routerConfig = createBrowserRouter([
                 element: <PieChartConfig />
             },
             {
-                path: codehighlightconfigUrl,
-                element: <CodeHighLightConfig />
+                path: codehighlightUrl,
+                element: <CodeHighLight />
             },
             {
-                path: notificationssystemconfigUrl,
-                element: <NotificationsSystemConfig />
+                path: notificationssystemUrl,
+                element: <NotificationsSystem />
             },
             {
                 path: blockquoteconfigUrl,
@@ -68,6 +102,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: highlightconfigUrl,
                 element: <HighlightConfig />
+            },
+            {
+                path: richtexteditorUrl,
+                element: <RichTextEditorConfig />
             }
         ]
     },

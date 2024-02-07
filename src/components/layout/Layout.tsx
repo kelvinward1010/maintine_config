@@ -36,7 +36,7 @@ export function Layout() {
                 </div>
             </AppShell.Header>
 
-            <AppShell.Navbar p="md">
+            <AppShell.Navbar p="md" style={{overflowY: 'auto'}}>
                 <div className={styles.navbar}>
                     <NavBar />
                 </div>

@@ -59,13 +59,19 @@ export const actions = [
         id: 'codehighlight',
         title: 'Code Highlight',
         description: 'Code Highlight Config',
-        url: '/codehighlight_config',
+        url: '/codehighlight',
     },
     {
         id: 'notifications system',
         title: 'Notifications System',
         description: 'Notifications System Config',
-        url: '/notificationssystem_config',
+        url: '/notificationssystem',
+    },
+    {
+        id: 'Rich text editor',
+        title: 'Rich Text Editor',
+        description: 'Rich Text Editor Config',
+        url: '/richtexteditor',
     },
 ];
 
